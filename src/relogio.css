@@ -1,0 +1,64 @@
+body{
+    height: 100vh;
+    width:100vw;
+    background: linear-gradient(to bottom right, rgb(0, 255, 255) 0%, rgb(88, 88, 88) 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+#conteudo{
+    
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    gap:1rem;
+
+}
+#banner{
+    
+    height: 20vw;
+    border-radius:  4px;
+    background-color: aqua;
+    box-shadow: 5px 5px 4px rgba(0, 0, 0, 0.4);
+}
+
+section{
+    padding:7px;
+    height:auto;
+    width:auto;
+    background-color: cadetblue;
+    display:flex;
+    gap:.4rem;
+    border-radius: 3px;
+    box-shadow: 5px 5px 4px rgba(0,0,0,0.4);
+}
+
+#dhour,#dmin,#dsec{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 4px rgba(0,0,0,0.4);
+    width: 5vw;
+    text-align: center;
+    justify-content: center;
+    border-radius: 3px;
+    background-color: black;
+    color: white;
+    font-family: 'Edit Undo BRK', sans-serif;
+}
+
+#numH,#numM,#numS{
+    margin:0px;
+    font-size: 3vw;
+
+}
+
+#txth,#txtm,#txts{
+    padding: 3px;
+    text-align: center;
+    font-size: 1vw;
+    font-family: 'Edit Undo BRK', sans-serif;
+
+}
