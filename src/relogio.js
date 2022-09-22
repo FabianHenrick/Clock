@@ -15,8 +15,7 @@ function clock(){
     txtmin.innerHTML= `${min}`
     txtsec.innerHTML= `${sec}`
 
-    let img = document.getElementById('banner') 
-    
+    let img = document.getElementById('banner')
     if(hour < 12){
 
         img.src = "../assets/Manhã.png"
