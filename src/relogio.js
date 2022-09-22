@@ -16,18 +16,22 @@ function clock(){
     txtsec.innerHTML= `${sec}`
 
     let img = document.getElementById('banner') 
-
+    hour = 17
     if(hour < 12){
 
         img.src = "../assets/Manhã.png"
         
-    }else if(hour < 18){
+    }else if (hour < 17){
+        img.src = "../assets/tarde2.png"
+        document.body.style.background = 'linear-gradient(to bottom right, #ffe599 ,#f28d3c)'
+
+    } else if(hour < 18){
         img.src = "../assets/fim-de-tarde.png"
-        document.body.style.background = 'linear-gradient(to bottom right, #808080 ,#da8d1b)'
+        document.body.style.background = 'linear-gradient(to bottom right, #f28d3c ,#27165c)'
 
     }else{
         img.src = "../assets/noite.png"
-        document.body.style.background = 'linear-gradient(to bottom right,#da8d1b,	#000080 )'
+        document.body.style.background = 'linear-gradient(to bottom right,#27165c ,#000000 )'
         
     }
 
